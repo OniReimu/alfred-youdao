@@ -1,7 +1,7 @@
-Alfred-Youdao
+Alfred-Youdao-Saber
 ===
 
-Youdao Dict for Alfred.    
+Youdao Dict for Alfred (coded by saber).    
 
 ![预览](./assets/demo.gif)
 
@@ -12,11 +12,12 @@ Youdao Dict for Alfred.
 + 使用`Shift+Enter`在有道词典网页中打开
 + 使用`Cmd+Enter`发音
 + 按`Enter`键复制翻译结果
-+ 支持设置源语言和目标语言，支持中文、日语、英语等相互翻译。语法是`yd zh-CHS=>ja 我爱你`
++ 支持设置源语言和目标语言，支持中文、日语、英语等相互翻译。语法是`yd zh=>ja 我爱你`
++ `yd #`查询历史记录，最多支持20条历史记录
 
 支持相互翻译的语言列表如下:
 
-+ `zh-CHS` - 中文
++ `zh` - 中文
 + `ja`     - 日文
 + `en`     - 英文
 + `ko`     - 韩文
@@ -28,16 +29,26 @@ Youdao Dict for Alfred.
 
 ## Dependencies
 
-+ Go 1.6
++ Go 1.6+
 
 ## TODO
 
 + [x] 一个好的自动更新机制
 + [x] 添加语音
++ [x] 修改查询中文翻译发音为中文原文的Bug，并修改其他相关语音逻辑
++ [x] 添加历史记录功能
 + [ ] 自定义有道API Key和Secret
 + [ ] 拼写提示功能
 
-## CHANGELOG
+## CHANGELOG (Edited by saber)
+
+### 1.5.1-saber
+
++ 修改查询中文翻译发音为中文原文的Bug，并修改其他相关语音逻辑
++ 添加历史记录功能
++ 发现MacOS从10.11开始的版本对于QuickLookURL的支持不太兼容的问题
+
+## CHANGELOG (Depreciated)
 
 ### 1.5.1
 
