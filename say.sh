@@ -25,9 +25,9 @@ do
     esac
 done
 
-set -- "${POSITIONAL[@]}"
+set -- "${POSITIONAL[@]}" # 数组转化成字符串
 
-if [[ ${#LANGUAGE} -gt 0 ]]; then
+if [[ ${#LANGUAGE} -gt 0 ]]; then # ${#var} 相当于 python里的len(var)
     VOICE=$(say -v ? | grep $LANGUAGE | cut -f1 -d ' ' | head -n 1)
 fi
 
